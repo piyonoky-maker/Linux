@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>스프링 부트 프로젝트</title>
+</head>
+<body>
+    <h2>스프링부트 로그 남기기</h2>
+    <h3>
+        nohup java -jar linux-demo-0.0.1-SNAPSHOT.jar > app.log 2>&1 &
+    </h3>
+<p>
+
+    cp -r /mnt/c/ClassRoom/10Linux/linux-demo ~/workspace
+    sudo apt update
+    sudo apt install openjdk-21-jdk
+    java -version
+    javac -version
+
+    sudo apt list --installed | grep java
+    cd ~
+    cd workspace/linux-demo
+    ./gradlew clean build
+    cd ./build/libs
+    ls -al
+    chmod 766 linux-demo-0.0.1-SNAPSHOT.jar
+
+    ps aux | grep java
+    cd workspace/linux-demo/build/libs
+
+    nohup java -jar linux-demo-0.0.1-SNAPSHOT.jar > app.log 2>&1 &
+    clear
+    cat app.log
+
+    ps aux | grep java
+    kill -9 6317
+
+    curl http://localhost:8000
+    
+</p>
+</body>
+</html>
