@@ -1,0 +1,19 @@
+테스트 시나리오
+
+1. 로컬에서 프로젝트 생성하고 github에 반영함.
+
+2. wsl 우분투에서 git clone을 한다.
+
+3. 우분투에서 서버 기동하기.
+
+4. 로컬에서 개발자가 소스를 수정하고 깃허브에 반영하였다.
+
+5. wsl 우분투에서 git pull
+
+6. ./gradlew clean build
+
+7. build/libs/XXX.jar새로 생성됨
+
+8. chmod 744 XXX.jar
+
+9. java -jar XXX.jar
